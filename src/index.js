@@ -50,18 +50,20 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderToys(toyList) {
     console.log(toyList);
 
-    /*function updateLikes(toyCards) {
+    function updateLikes(toyCards) {
       fetch(API, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(likeAdder)
+        body: JSON.stringify({
+          "likes": likeAdder
+        })
       })
       .then((resp) => resp.json())
-      .then(toyCards => console.log(toy))
+      .then(toyCards => console.log(likeAdder))
 
-    } */
+    }
     
 
 
